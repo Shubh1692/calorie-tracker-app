@@ -1,38 +1,190 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	text-align: center;
+	height: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.p-20 {
+	padding: 20px;
+}
+
+.newUserFooter {
+	margin: 20px 0px;
+	float: right;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+	background-color: #282c34;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+body {
+	background-color: #F5F5F5;
+}
+
+.listCard {
+	background-color: #fff;
+	box-shadow: 1px 1px 6px 1px #a3d5d5;
+	border-radius: 5px;
+	width: initial;
+  overflow-y: auto;
+  min-height: calc( 100% - 70px);
+}
+
+.appHeader {
+	display: flex;
+	justify-content: space-between;
+  margin: 20px;
+  height: 50px;
+}
+
+.noUser {
+	padding-top: 60px;
+	font-family: 'Open Sans', sans-serif;
+	color: #757575;
+	font-weight: bold;
+}
+
+.title {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: #757575;
+}
+
+.userName {
+	color: #303030;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.assignTo {
+	color: #303030;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.date {
+	color: #757575;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.userList {
+	padding: 15px;
+	text-align: start
+}
+
+.userDetailLabel {
+	margin: 15px 0px 5px 0px
+}
+
+.userListcard {
+	border-bottom: 1px solid #37d5d5;
+	padding-bottom: 30px!important;
+}
+
+.optionCard {
+	box-shadow: 1px 1px 6px 1px #a3d5d5;
+	padding: 8px 12px;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.dropdown .menu {
+	left: -74px !important;
+}
+
+.userDetails {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.invalid-feedback {
+	position: absolute;
+	bottom: -15px;
+	color: red;
+}
+
+input {
+	margin-top: 10px !important;
+}
+
+.detail-container {
+  display: flex !important; 
+}
+
+.content-detail {
+  width: 50%;
+  padding: 10px;
+}
+.calorie-btn-gp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.userName {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.basic {
+  white-space: nowrap;
+}
+
+.activities-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.activities-dropdown-field {
+  width: 100%;
+}
+
+.activities-dropdown-field-activity {
+  margin: 0 !important;
+  margin-right: 10px !important;
+}
+
+.activities-label {
+  display: flex  !important;
+  align-items: center !important;
+  justify-content: space-between;
+}
+
+.activities-dropdown-field-btn {
+  margin: 0 !important;
 }
