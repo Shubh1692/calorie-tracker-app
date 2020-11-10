@@ -105,6 +105,7 @@ const AddCalorieOut = ({
                                 <div className="field activities-dropdown-field activities-dropdown-field-activity">
                                     <label style={{ marginBottom: 5 }}>Activity</label>
                                     <AsyncSelect
+                                        placeholder="Search for get activity list"
                                         value={activity}
                                         cacheOptions
                                         loadOptions={fetchActivities}

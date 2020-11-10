@@ -68,6 +68,7 @@ const AddCalorieIn = ({
                         <div className="field">
                             <label>Food</label>
                             <AsyncSelect
+                                placeholder="Search for get food list"
                                 cacheOptions
                                 loadOptions={fetchFoods}
                                 defaultOptions onChange={(e) => handleChange('food', e.value)} />
